@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+
+  <title>Donate</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  </head>
+
+<body >
+
+  <div class="wrapper row1" style="padding: 15px;background-color: rgba(120, 255, 208, 1.0);"></div>
+<div class="wrapper row1" id="header1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+
+      <h1 class="logoname"><a href="index.html" > <img src="{% static 'images/tratrlogo.png' %}" style="height :90px; width :180px; align-content: center;" > <span> </span>  </a></h1>
+
+    </div>
+    <nav id="mainav" class="fl_right"> 
+
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">Values</a></li>
+        <li><a href="#impact">Our Impact</a></li>
+        <li><a href="pages/donate.html">Donate</a></li>
+      </ul-->
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+  <main id="main">
+    
+<div class="bgded overlay" style="background-image:url('{% static 'images/websitebackground.png' %}'); opacity: 1;">
+
+  <section id="ctdetails" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h3 class="heading">Extend your hand</h3>
+      <p class="nospace btmspace-15"> If you like our version of society you can join our team to make that change. </p>
+
+<!-- <div class="one_half" >
+      
+
+    </div>
+ -->
+
+
+    </div>
+    
+<div  class="center" style="background-color: rgba(000,000, 000, 0.2);">
+  <section id="ctdetails" class="container hoc clear center" > 
+      <div class="one_half first" style="margin-top: -15px;">
+        <img src="{% static 'images/ee.svg' %}" style="padding-top: 15px; margin: 15px;">
+      </div>
+      <div class="one_half" style="margin-left: 15px;">
+        <h1>Education For Life</h1>
+        <div class="one_half first">
+        <p style="color:rgba(151,169,189,1)">Welcome to school kit
+distribution & Education
+awarness programe in
+Nandurbar. Which is an Aadivasi
+district in Maharashtra</p>
+<img src="{% static 'images/edu1.jpeg' %}" alt="Avatar" style="border-radius:25% ;  height: 250px; width: 300px; margin-top: 50px; " >
+<img src="{% static 'images/edu2.jpeg' %}" alt="Avatar" style="border-radius:25%; height: 180px; width: 200px; margin-left: 50px;  margin-top: 50px ">
+<img src="{% static 'images/edu5.jpeg' %}" alt="Avatar" style="border-radius:25%; margin-top: 5px; height: 250px; width: 300px; margin-top: 50px">
+</div>
+<div class="one_half">
+<img src="{% static 'images/edu3.jpeg' %}" alt="Avatar" style="border-radius:25%; height: 250px; width: 300px; margin-top: 50px">
+<img src="{% static 'images/edu4.jpeg' %}" alt="Avatar" style="border-radius:25%; margin-top: 5px; height: 250px; width: 300px; margin-top: 50px">
+<img src="{% static 'images/edu6.jpeg' %}" alt="Avatar" style="border-radius:25%; height: 180px; width: 200px; margin-left: 50px;  margin-top: 50px ">
+</div>
+      </div>
+    </section>
+    
+    </div>
+
+<div class="one_half first" style="padding-top: 15px;">
+    
+    <article class="Online" style="padding-top:50px">
+      <fieldset >
+        <form  action="submit" method="get" class="php-email-form">
+          <center>
+          <ul class="nospace group btmspace-80 elements elements-four">
+              <li class="one_half">
+                
+                <button type="button" class="btn btn-info" value="1200" onclick="one()">Rs. 1200</button>
+                <button type="button" class="btn btn-info" value="3600" onclick="two()">Rs. 3600</button>
+
+              </li>
+
+      
+              <li class="one_half">
+                
+                <button type="button" class="btn btn-info" value="6400" onclick="three()">Rs. 6400</button>
+                <button type="button" class="btn btn-info" value="9800" onclick="four()">Rs. 9800</button>
+
+              </li>
+    
+
+
+           </ul>
+           </center>
+ 
+          <legend>Newsletter:</legend>
+          <input type="text" class="form-control" name="amount" id="amount" placeholder="Amount*" style="border-radius: 12px; opacity: 0.5; " required />
+            <div class="validate"></div>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Name*" data-rule="minlen:4" data-msg="Please enter at least 4 chars" style="border-radius: 12px; opacity: 0.5;" required />
+            <div class="validate"></div>
+            <input type="number" class="form-control" name="number" id="number" placeholder="Contact-No*" data-rule="minlen:10" data-msg="Please enter validation number" style="border-radius: 12px; opacity: 0.5;" required />
+            <div class="validate"></div>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email*" data-rule="email" data-msg="Please enter a valid email" style="border-radius: 12px; opacity: 0.5;" required />
+            <input type="text" class="form-control" name="pan" id="pan" placeholder="Pan-No" data-rule="minlen:10" data-msg="Please enter validation number" style="border-radius: 12px; opacity: 0.5;" />
+            <div class="validate"></div>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" style="border-radius: 12px; opacity: 0.5;" />
+            <div class="validate"></div>
+            <input type="hidden" class="form-control" name="orderid" id="orderid" value="01" style="border-radius: 12px; opacity: 0.5;" />
+            <div class="validate"></div>
+             <div class="block clear">
+            <input name="comment" id="comment" cols="25" rows="10" data-msg="Your Massage for us" placeholder="Message" style="border-radius: 12px; opacity: 0.5;"></textarea>
+            <div class="validate"></div> 
+          </div>
+          <button onclick="orid()" class="btn btn-info center" style="padding-right: 50px; padding-left: 50px;"  >Submit</button>
+        </fieldset>
+      </form>
+    </article>
+    </div>
+
+    <div class="one_half " style="padding-top: 25px;">
+          <div class="center"><header><h3>DONATION THROUGH OTHER MODES</h3></header></div>
+        <div class="center" style="padding-top:20px"><h6> 1. By Cheque/DD </h6>
+        <p> In favour of "TRATR FOUNDATION" payable at Bavdhan. </p>
+        <don ><h6 style="padding-top:15px"> 2. Online Transfer </h6></don>
+        <p> Account Name: Tratr Foundation </p>
+        <p>A/C No : 50200064463452 </p>
+        <p>Bank Name : HDFC Bank </p>
+        <p>City : Pune </p>
+        <p>IFSC Code : HDFC00002690 </p>
+        <don ><h6 style="padding-top:15px"> 3. By UPI  </h6></don>
+        <img src="{% static 'images/qr.jpeg' %}" style="height:500px;width: 270px;">
+        </div>
+
+      
+      </div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div class="wrapper row5" >
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Tratr</a></p>
+    <!--p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p-->
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script type="text/javascript">
+    var i=18;
+    function orid(){
+      var d=document.getElementById("orderid");
+      d.value=Math.floor(Math.random()*(+500000 - +0));
+      console.log(d.value);
+      i=i+1;
+    }
+    function one(){
+      var a=document.getElementById("amount");
+      a.value="1200";
+    }
+    function two(){
+      var a=document.getElementById("amount");
+      a.value="3600";
+    }
+    function three(){
+      var a=document.getElementById("amount");
+      a.value="6400";
+    }
+    function four(){
+      var a=document.getElementById("amount");
+      a.value="9800";
+    }
+  </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script>
+  $('.count').each(function () {
+$(this).prop('Counter',0).animate({
+  Counter: $(this).text()
+}, {
+  duration: 3990,
+  easing: 'swing',
+  step: function (now) {
+      $(this).text(Math.ceil(now));
+  }
+});
+});
+    </script>
+
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

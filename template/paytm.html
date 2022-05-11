@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rendaring..</title>
+
+<script type="text/javascript">
+  function onScriptLoad(){
+    //console.log({{t_id}})
+      var config = {
+        "root": "",
+        "flow": "DEFAULT",
+        "data": {
+        "orderId": "{{orderId}}", 
+        "token": "{{t_id}}",
+        "tokenType": "TXN_TOKEN",
+        "amount": "{{amount}}"
+        },
+        "handler": {
+          "notifyMerchant": function(eventName,data){
+            console.log("notifyMerchant handler function called");
+            console.log("eventName => ",eventName);
+            console.log("data => ",data);
+          } 
+        }
+      };
+
+      if(window.Paytm && window.Paytm.CheckoutJS){
+          window.Paytm.CheckoutJS.onLoad(function excecuteAfterCompleteLoad() {
+              // initialze configuration using init method 
+              window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                  // after successfully updating configuration, invoke JS Checkout
+                  window.Paytm.CheckoutJS.invoke();
+              }).catch(function onError(error){
+                  console.log("error => ",error);
+              });
+          });
+      } 
+  }
+</script>
+
+
+  </head>
+  <body>
+    <h1>Redricting you..</h1>
+
+    <!-- <form action="https://securegw.paytm.in/theia/api/v1/initiateTransaction?mid=igXLGH25243081243293&orderId=ORDERID_98765" method="post" name="paytm">
+      {% for key,value in param_dict.items %}
+        <input type="hidden" name="{{key}}" value="{{value}}">
+      {% endfor %}
+    </form>
+ -->
+
+    <script type="text/javascript" crossorigin="anonymous" src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/igXLGH25243081243293.js" onload="onScriptLoad()"> </script>
+
+
+  </body>
+  
+  <!-- <script type="text/javascript">
+    document.paytm.submit()
+  </script> -->
+</html>
